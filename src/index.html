@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <title>Test task</title>
+</head>
+
+<body class="bg-lightgray-prewhite">
+    <div id="side_panel"
+        class="group/side bg-white w-[72px] lg:w-[306px] h-screen flex flex-col fixed flex-grow-0 flex-shrink-0 transition-all z-40">
+        <div id="header" class="flex my-5 mx-[17.5px] lg:mx-4 items-center lg:w-auto transition-all overflow-hidden">
+            <img src="../assets/img/setting-1.svg" alt="settings grear svg" />
+            <p class="lg:ms-1 text-2xl font-semibold text-nowrap transition-all">
+                Dashboard<abbr class="ms-0.5 text-xs font-medium text-lightgray text-nowrap">v.01</abbr>
+            </p>
+        </div>
+        <ul class="mt-[57px] mx-4 flex flex-col gap-y-3 content-center">
+            <li
+                class="group p-2 grid grid-cols-item hover:bg-accent-light text-lightgray-light hover:text-white rounded-lg content-center cursor-pointer overflow-hidden">
+                <div class="dashboard-ico bg-lightgray-light group-hover:bg-white"></div>
+                <p class="mx-3 text-nowrap">Dashboard</p>
+            </li>
+            <li
+                class="group p-2 grid grid-cols-item hover:bg-accent-light text-lightgray-light hover:text-white rounded-lg content-center cursor-pointer overflow-hidden">
+                <div class="products-ico bg-lightgray-light group-hover:bg-white"></div>
+                <p class="mx-3 text-nowrap">Products</p>
+                <div class="chevron justify-self-end w-[16px] h-[16px] bg-lightgray-light self-center group-hover:bg-white">
+                </div>
+            </li>
+            <li
+                class="group p-2 grid grid-cols-item bg-accent text-lightgray-light rounded-lg content-center overflow-hidden">
+                <div class="customer-ico bg-white"></div>
+                <p class="mx-3 text-white text-nowrap">Customers</p>
+                <div class="chevron justify-self-end w-[16px] h-[16px] self-center bg-white"></div>
+            </li>
+            <li
+                class="group p-2 grid grid-cols-item hover:bg-accent-light text-lightgray-light hover:text-white rounded-lg content-center cursor-pointer overflow-hidden">
+                <div class="income-ico bg-lightgray-light group-hover:bg-white"></div>
+                <p class="mx-3 text-nowrap">Income</p>
+                <div class="chevron justify-self-end w-[16px] h-[16px] bg-lightgray-light self-center group-hover:bg-white">
+                </div>
+            </li>
+            <li
+                class="group p-2 grid grid-cols-item hover:bg-accent-light text-lightgray-light hover:text-white rounded-lg content-center cursor-pointer overflow-hidden">
+                <div class="promote-ico bg-lightgray-light group-hover:bg-white"></div>
+                <p class="mx-3 text-nowrap">Promote</p>
+                <div class="chevron justify-self-end w-[16px] h-[16px] bg-lightgray-light self-center group-hover:bg-white">
+                </div>
+            </li>
+            <li
+                class="group p-2 grid grid-cols-item hover:bg-accent-light text-lightgray-light hover:text-white rounded-lg content-center cursor-pointer overflow-hidden">
+                <div class="help-ico bg-lightgray-light group-hover:bg-white"></div>
+                <p class="mx-3 text-nowrap">Help</p>
+                <div class="chevron justify-self-end w-[16px] h-[16px] bg-lightgray-light self-center group-hover:bg-white">
+                </div>
+            </li>
+        </ul>
+        <div id="profile" class="mt-auto mx-4 mb-[76px] flex flex-row">
+            <img src="../assets/img/Profile.png" alt="profile image" width="42px" height="42px"
+                class="w-[42px] h-[42px] min-w-[42px]" />
+            <div id="profile_details"
+                class="ps-[12px] flex-col justify-center overflow-hidden w-0 lg:w-full transition-all">
+                <p class="text-sm text-nowrap">Evano</p>
+                <p class="text-xs text-lightgray-darker text-nowrap">Project Manager</p>
+            </div>
+        </div>
+        <div id="open_button" class="absolute lg:hidden bg-white w-[20px] h-[37px] top-5 right-0 transition-all z-50">
+            <div id="open_chevron" class="chevron bg-gray-600 bg-no-repeat bg-left h-full rotate-0 transition-all">
+            </div>
+        </div>
+    </div>
+    <div id="main" class="ml-[72px] lg:m-0 pl-[10px] md:pl-[71px] pt-[41px] pr-[10px] md:pr-[95px] lg:ml-[306px] justify-self-stretch overflow-hidden">
+        <h1 class="text-l md:text-2xl">Hello Evano 👋🏼,</h1>
+        <div id="dashboard" class="mt-[25px] md:mt-[51px] w-full pt-[30px] pb-[40px] bg-white rounded-3xl">
+            <div class="flex flex-col md:flex-row px-[38px] md:pr-[58px] justify-between flex-wrap items-stretch md:items-center">
+                <div class="">
+                    <h1 class="text-md md:text-xl font-semibold">All Customers</h1>
+                    <p class="text-xs md:text-sm text-success">Active Members</p>
+                </div>
+                <input type="text" class="search-bg bg-lightgray-lightestest rounded-lg h-[38px] w-full md:w-[216px] flex-grow-1 md:flex-grow-0 mt-2 md:mt-0 px-[40px] focus-visible:outline-accent placeholder:text-lightgray-lighter"
+                    placeholder="Search">
+            </div>
+            <div class="overflow-auto pl-[38px] pr-[44px]">
+                <table class="w-full mt-[26px] text-nowrap text-sm">
+                    <thead class="w-full relative after:absolute after:block after:h-[1px] after:bg-gray-400 after:bottom-0 after:left-[-38px] after:right-[-44px]">
+                        <tr class="text-lightgray-lighter">
+                            <th class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-left">Customer name</p></th>
+                            <th class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-left">Company</p></th>
+                            <th class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-left">Phone Number</p></th>
+                            <th class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-left">Email</p></th>
+                            <th class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-left">Country</p></th>
+                            <th class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-left">Status</p></th>
+                        </tr>
+                    </thead>
+                    <tbody class="w-full text-lightgray-darkestest">
+                        <tr class="border-b-[1px] border-lightgray-lightest">
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Jane Cooper</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Microsoft</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">(225) 555-0118</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">jane@microsoft.com</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">United States</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-center bg-success-light rounded-[4px] border-success-dark text-success-darker border-[1px]">Active</p></td>
+                        </tr>
+                        <tr class="border-b-[1px] border-lightgray-lightest">
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Floyd Miles</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Yahoo</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">(205) 555-0100</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">floyd@yahoo.com</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Kiribati</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-center bg-danger-light rounded-[4px] border-danger-dark text-danger-dark border-[1px]">Inactive</p></td>
+                        </tr>
+                        <tr class="border-b-[1px] border-lightgray-lightest">
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Ronald Richards</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Adobe</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">(302) 555-0107</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">ronald@adobe.com</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Israel</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-center bg-danger-light rounded-[4px] border-danger-dark text-danger-dark border-[1px]">Inactive</p></td>
+                        </tr>
+                        <tr class="border-b-[1px] border-lightgray-lightest">
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Marvin McKinney</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Tesla</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">(252) 555-0126</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">marvin@tesla.com</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Iran</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-center bg-success-light rounded-[4px] border-success-dark text-success-darker border-[1px]">Active</p></td>
+                        </tr>
+                        <tr class="border-b-[1px] border-lightgray-lightest">
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Jerome Bell</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Google</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">(629) 555-0129</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">jerome@google.com</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Réunion</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-center bg-success-light rounded-[4px] border-success-dark text-success-darker border-[1px]">Active</p></td>
+                        </tr>
+                        <tr class="border-b-[1px] border-lightgray-lightest">
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Kathryn Murphy</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Microsoft</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">(406) 555-0120</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">kathryn@microsoft.com</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Curaçao</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-center bg-success-light rounded-[4px] border-success-dark text-success-darker border-[1px]">Active</p></td>
+                        </tr>
+                        <tr class="border-b-[1px] border-lightgray-lightest">
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Jacob Jones</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Yahoo</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">(208) 555-0112</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">jacob@yahoo.com</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Brazil</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-center bg-success-light rounded-[4px] border-success-dark text-success-darker border-[1px]">Active</p></td>
+                        </tr>
+                        <tr class="border-b-[1px] border-lightgray-lightest">
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Kristin Watson</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Facebook</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">(704) 555-0127</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">kristin@facebook.com</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium">Åland Islands</p></td>
+                            <td class="px-[8px] py-[10px]"><p class="py-[4px] font-medium text-center bg-danger-light rounded-[4px] border-danger-dark text-danger-dark border-[1px]">Inactive</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pt-[30px] pl-[38px] pr-[48px] flex flex-col-reverse md:flex-row justify-center gap-3 md:justify-between items-center md:items-end">
+                <p class="text-sm text-lightgray-lighter leading-none md:self-end">Showing data 1 to 8 of  256K entries</p>
+                <div class="text-[10px] leading-none space-x-[12px] flex flex-row items-stretch">
+                    <button type="button" class="hover:text-white hover:bg-accent-light text-lightgray-darkest bg-lightgray-lightester border-lightgray-lightest border-[1px] rounded-[4px] w-[25px] py-[6px]"><p class="mx-auto">&lt;</p></button>
+                    <button type="button" class="bg-accent border-accent border-[1px] rounded-[4px] w-[25px] py-[6px] text-white"><p class="mx-auto">1</p></button>
+                    <button type="button" class="hover:text-white hover:bg-accent-light text-lightgray-darkest bg-lightgray-lightester border-lightgray-lightest border-[1px] rounded-[4px] w-[25px] py-[6px] [@media(min-width:400px)]:block hidden"><p class="mx-auto">2</p></button>
+                    <button type="button" class="hover:text-white hover:bg-accent-light text-lightgray-darkest bg-lightgray-lightester border-lightgray-lightest border-[1px] rounded-[4px] w-[25px] py-[6px] [@media(min-width:400px)]:block hidden"><p class="mx-auto">3</p></button>
+                    <button type="button" class="hover:text-white hover:bg-accent-light text-lightgray-darkest bg-lightgray-lightester border-lightgray-lightest border-[1px] rounded-[4px] w-[25px] py-[6px] [@media(min-width:400px)]:block hidden"><p class="mx-auto">4</p></button>
+                    <p class="text-sm">...</p>
+                    <button type="button" class="hover:text-white hover:bg-accent-light text-lightgray-darkest bg-lightgray-lightester border-lightgray-lightest border-[1px] rounded-[4px] w-[25px] py-[6px] [@media(min-width:400px)]:block hidden"><p class="mx-auto">40</p></button>
+                    <button type="button" class="hover:text-white hover:bg-accent-light text-lightgray-darkest bg-lightgray-lightester border-lightgray-lightest border-[1px] rounded-[4px] w-[25px] py-[6px]"><p class="mx-auto">&gt;</p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>

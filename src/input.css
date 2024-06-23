@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chevron{
+    mask-image: url(../assets/img/chevron-right\ 2.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.dashboard-ico{
+    mask-image: url(../assets/img/key-square.svg);
+}
+
+.products-ico{
+    mask-image: url(../assets/img/3d-square\ 1.svg);
+}
+
+.customer-ico{
+    mask-image: url(../assets/img/user-square\ 1.svg);
+}
+
+.income-ico{
+    mask-image: url(../assets/img/wallet-money\ 2.svg);
+}
+
+.promote-ico{
+    mask-image: url(../assets/img/discount-shape\ 1.svg);
+}
+
+.help-ico{
+    mask-image: url(../assets/img/message-question\ 1.svg);
+}
+
+.search-bg{
+    background-image: url(../assets/img/search\ 1.svg);
+    background-position: 8px 7px;
+    background-repeat: no-repeat;
+}
